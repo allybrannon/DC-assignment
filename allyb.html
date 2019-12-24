@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>About Ally Brannon</title>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat|Open+Sans&display=swap" rel="stylesheet">
+    <style>
+        body {
+            width: 90%;
+            max-width: 900px;
+            margin: 2em auto;
+            font: .9em/1.2 'Montserrat', Helvetica, sans-serif;
+        }
+        .container {
+            display: grid;
+            grid-template-columns: 1fr 3fr;
+            grid-gap: 20px;
+        }
+        header,
+        footer {
+            border-radius: 5px;
+            padding: 15px;
+            background-color: rgb(100, 129, 179);
+            border: 3px solid rgb(27, 30, 31);
+        }
+        aside {
+            border-right: 1px solid #999;
+        }
+        .container {
+            display: grid;
+            grid-template-areas: 
+               "header header"
+               "sidebar content"
+               "footer footer";
+            grid-template-columns: 2fr 4fr;
+            grid-gap: 20px;
+        }
+  
+        header {
+            grid-area: header;
+            font-size: 40px;
+            font-weight: bolder;
+            font-family: "Montserrat", sans-serif;
+            text-align: center;
+        }   
+
+        article {
+            grid-area: content;
+        }
+
+        aside {
+            grid-area: sidebar;
+            margin-left: auto;
+            margin-right: auto;
+            font-size: smaller;
+        }
+
+        footer {
+            grid-area: footer;
+            font-size: 16px;
+            text-align: center;
+        }
+        img {
+            display: block;
+            width: 300px;
+        }
+        .center {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: 98%;
+        }
+        .img-container {
+            text-align: center;
+            display: block;
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <header>Ally Brannon</header>
+        <article>
+        <h1>About Me</h1>
+        <p>I live in the Kirkwood neighborhood of Atlanta. I'm married and have one son and 2 small dogs. I play softball and enjoy running, having completed my first half marathon in 2019!</p>
+        <p>For the last 19 years, I've worked in retail operations- with Starbucks Coffee Co. and with Aldi. In 2004, I graduated with a B.B.A in Marketing from Georgia State University. I'm <strong> thrilled</strong> to begin a new phase of my life by joining the bootcamp at DigitalCrafts!</p>
+        <img src="images/family.jpg"; alt= "pic of ally's family" class="center">
+        </article>
+
+        <aside>
+            <img src="images/ally.jpg" alt="a pic of ally" class="center"> 
+
+            <dl>Things I enjoy:</dl>
+            <ul style="list-style-type: circle;">
+                <li>Coffee</li>
+                <li>Dogs</li>
+                <li>Ping-Pong</li>
+                <li>Twizzlers</li>
+                <li>Running</li>
+                <li>Learning new things <small>(like coding!)</small></li>
+                <li>Watching Atlanta sports teams</li>
+                <li>Beer<small>(especially local brews)</small></li>
+            </ul>
+        
+        </aside>    
+
+        <footer> 
+            <a href="mailto:allison.brannon@gmail.com" style="color:rgb(55, 237, 210)";>Email</a>
+            <br><a href="https://www.linkedin.com/in/allybrannon/" style="color:rgb(55, 237, 210)";>LinkedIn<a>
+        </footer>
+
+    </div>
+
+</body>
+
+</html>
